@@ -21,3 +21,5 @@ class ConsultasController < ApplicationController
   def enviar_mail(consulta)
     UserMailer.mailer(consulta).deliver_now
   end
+
+end
