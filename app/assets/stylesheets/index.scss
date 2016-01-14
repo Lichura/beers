@@ -1,3 +1,1079 @@
 // Place all the styles related to the index controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@import url(https://fonts.googleapis.com/css?family=Cabin|Muli|Josefin+Sans);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+
+/*------------------------------------------------
+		Condiciones generales de la pagina
+--------------------------------------------------*/
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background: white;
+}
+
+h1 {
+	font-family: 'Lobster', cursive;
+	font-size: 1em;
+	color: black;
+	text-align: center;	
+}
+
+.row:last-child {
+	margin-bottom: 0;
+}
+
+/*==============================================
+			Navegador bootstrap
+==============================================*/
+
+
+nav {
+	top: 0;
+	left: 0;
+	height: 10vh;
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+}
+
+nav li {
+	display: block;
+	float: left;
+	
+}
+nav a {
+	color: white;
+	text-decoration: none;
+	font-size: 100%;
+}
+
+nav a:hover {
+	font-style: underline;
+}
+
+.navbar-brand img{
+	width: 10%;
+	position: fixed;
+}
+
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  text-align: center;
+  opacity: 0.2;
+}
+.fixed-nav-bar:hover {
+	opacity: 1;
+	transition: all .7s ease-in-out;
+}
+.fixed-nav-bar img{
+	left: 1%;
+	top: 20%;
+	height: 10vh;
+	position: relative;
+	float: left;
+	display: block;
+	opacity: 1;
+}
+.fixed-nav-bar ul {
+	width: 100%;
+	margin: 0;
+}
+.fixed-nav-bar ul li {
+	list-style-type: none;
+	display: inline-block;
+	width: 10%;
+}
+.fixed-nav-bar ul li:hover {
+	background-color:gray;
+	line-height: 10hv;	
+}
+
+.fixed-nav-bar ul li a {
+	text-decoration: none;
+	font-family:'Roboto Slab', serif ;
+	font-size: 1em;
+	display: block;
+	width: 100%;
+	color: white;
+	opacity: 1;	
+}
+
+	nav {
+			background-color: rgba(0,0,0,0.1)
+	}
+
+
+	.container-fluid img{
+		position: fixed;
+		width: 7%;
+		background: none;
+	}
+	.container-fluid{
+		height: 10vh;
+		font-family: 'Roboto Slab', serif;
+	}
+
+	.container-fluid:hover{
+		background-color: rgba(0,0,0,1.0)
+	}
+
+	.container-fluid ul {
+		margin: 0 0 0 25%;
+		color: white;
+	}	
+
+
+/*===============================================
+			Footer
+================================================*/
+/*----------------------------------------------
+					general
+-----------------------------------------------*/
+#Footer {
+	height: 30vh;
+	margin-top: 5%;
+}
+
+#Footer h1 {
+	text-align: center;
+	color: black;
+	margin: 0 5% 0 5%;
+	font-size: 1em;
+}
+
+#suscribe{
+	position: relative;
+	height: 10vh;
+}
+#suscribe input{
+	display: block;
+	float: left;
+	text-align: center;
+	width: 85%;
+	height: 100%;
+	border-style: 1px;
+	opacity: 0.6;	
+}
+#suscribe button{
+	float: left;
+	display: block;
+	background: none;
+	border: none;
+	width: 15%;
+	height: 100%;
+	background-color: #FF7519;
+}
+
+#Footer ul {
+	list-style-type: none;
+	margin-left: 10%;
+}
+
+#Footer ul li {
+	display: inline;
+	}
+
+#Footer ul li a img{
+	width: 50px;
+
+}
+
+#footer-logo {
+	width: 250px;
+	margin-left: 5%;
+}
+
+
+/*----------------------------------------------
+			footer pantalla grande
+-----------------------------------------------*/
+@media screen and (min-width: 960px){
+	#suscribe{
+		width: 40%;
+		display: block;
+		margin-left: 30%;
+		position: absolute;
+	}
+	#footer-logo{
+		float: left;
+		margin-top: -5%;
+		
+	}
+	
+	#Footer h1{
+		position: relative;
+		margin-right: 25%;
+	}
+	
+	#Footer ul{
+	position: absolute;
+	margin-left: 70%;
+	}
+	
+}
+/*----------------------------------------------
+			footer pantalla chica
+-----------------------------------------------*/
+@media screen and (max-width: 960px){
+	#suscribe{
+	width: 100%;
+	margin-top: 15%;
+	padding-left: 5px;
+	padding-right: 5px;
+	}
+}
+
+
+
+
+/*===============================================
+			Galeria de fotos
+================================================*/
+
+	#Gallery {
+		height:100vh;
+	}
+
+
+	.slides {
+	  padding: 0;
+	  width: 100%;
+	  height: 100%;
+	  display: block;
+	  margin: 0 auto;
+	  position: relative;
+	}
+
+	.slides * {
+	  user-select: none;
+	  -ms-user-select: none;
+	  -moz-user-select: none;
+	  -khtml-user-select: none;
+	  -webkit-user-select: none;
+	  -webkit-touch-callout: none;
+	}
+
+	.slides input {
+	  display: none;
+	}
+
+	.slide-container {
+	  display: block;
+	}
+
+	.slide {
+	  top: 0;
+	  opacity: 0;
+	  width: 100%;
+	  height: 100%;
+	  display: block;
+	  position: absolute;
+	  transform: scale(0);
+	  transition: all .7s ease-in-out;
+	}
+
+	.slide img {
+	  width: 100%;
+	  height: 100%;
+	}
+
+	.galeria label {
+	  width: 20px;
+	  height: 10%;
+	  display: none;
+	  position: absolute;
+	  opacity: 0;
+	  z-index: 9;
+	  cursor: pointer;
+	  transition: opacity .2s;
+	  color: #FFF;
+	  font-size: 100pt;
+	  text-align: center;
+	  line-height: 100vh;
+	  font-family: "Varela Round", sans-serif;
+	  background-color: rgba(255, 255, 255, .3);
+	  text-shadow: 0px 0px 15px rgb(119, 119, 119);
+	}
+
+	.slide:hover + .galeria label {
+	  opacity: 0.5;
+	}
+
+	.galeria label:hover {
+	  opacity: 1;
+	}
+
+	.galeria .next {
+	  right: 3%;
+	}
+
+	input:checked + .slide-container .slide {
+	  opacity: 1;
+	  transform: scale(1);
+	  transition: opacity 1s ease-in-out;
+	}
+
+	input:checked + .slide-container .galeria label {
+	  display: block;
+	}
+
+	.galeria-dots {
+	  width: 100%;
+	  bottom: 9px;
+	  height: 11px;
+	  display: block;
+	  position: absolute;
+	  text-align: center;
+	}
+
+	.galeria-dots .galeria-dot {
+	  top: -5px;
+	  width: 11px;
+	  height: 11px;
+	  margin: 0 4px;
+	  position: relative;
+	  border-radius: 100%;
+	  display: inline-block;
+	  background-color: rgba(0, 0, 0, 0.6);
+	}
+
+	.galeria-dots .galeria-dot:hover {
+	  cursor: pointer;
+	  background-color: white;
+	}
+
+	input#img-1:checked ~ .nav-dots label#img-dot-1,
+	input#img-2:checked ~ .nav-dots label#img-dot-2,
+	input#img-3:checked ~ .nav-dots label#img-dot-3,
+	input#img-4:checked ~ .nav-dots label#img-dot-4,
+	input#img-5:checked ~ .nav-dots label#img-dot-5,
+	input#img-6:checked ~ .nav-dots label#img-dot-6 {
+	  background: rgba(0, 0, 0, 0.8);
+	}
+
+
+
+
+
+/*===================================================
+=====================================================
+				cervezas
+=====================================================
+===================================================*/
+	#Beers{
+	height: 100vh;
+	}
+	
+	.cerveza {
+		position: relative;
+		float: left;
+		overflow: hidden;
+		
+		-webkit-box-shadow: 0px 20px 24px -10px rgba(0,0,0,0.34);
+		-moz-box-shadow: 0px 20px 24px -10px rgba(0,0,0,0.34);
+		box-shadow: 0px 24px 24px -10px rgba(0,0,0,0.34);
+	}
+
+	.cerveza img{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	
+	
+		.img-on-top{
+		display: block;
+		position: absolute;
+		z-index: 20;
+		background: rgba(50,50,50,0.8);
+		overflow: hidden;
+		transition: all 0.5s;
+			}
+			
+	.img-expand{
+		display: block;
+		position: absolute;
+		z-index: 100;
+		margin-left: 50%;
+		margin-top: 50%;
+		width: 0%;
+		height: 0%;
+		border: solid 5px #FFFFFF;
+		text-align: center;
+		color: #fff;
+		line-height: 15px;
+		font-weight: 700;
+		font-size: 15px;
+		border-radius: 30px;
+	}
+	
+	.img-on-top h1{
+		color: white;
+		font-size: 1.2em;
+	}
+	
+	.img-on-top a{
+		text-decoration: none;
+	}
+	
+	.img-on-top a:hover{
+		color: white;
+	}
+	
+	.img-expand ul li{
+		list-style-type: none;
+		text-align: center;
+		left: -25%;
+	}
+
+	.img-on-top{
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 0;
+		opacity: 0;
+	}
+	
+	.cerveza.hover .img-on-top{
+		opacity: 1;
+	}
+	
+	.cerveza.hover .img-expand{
+		margin: 0 0 0 0;
+		border-radius: 0;
+		width: 100%;
+		height: 100%;
+		transition: 1s;
+	}
+
+
+
+
+	/*-----------------------------------
+		Cervezas Pantalla grande
+	-------------------------------------*/
+	@media screen and (min-width: 1000px) { 
+		#Beers.expandir{
+			height: 300%;
+		}
+		.cerveza {
+			width: 200px;
+			height: 200px;
+			margin: 15vh 0 0 4%;
+		}
+		.cerveza img{
+			left: 50%;
+			display: block;
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+/*---------------------
+	Cervezas Pantalla de notebook
+---------------------*/
+
+@media screen   
+	and (min-width: 700px) 
+  	and (max-width: 1000px) {
+	.cerveza {
+		width: 30%;
+		height: 40vh;
+		margin: 15vh 0 0 2%;
+	}
+}
+/*--------------------------------------
+		Cervezas	Pantalla chica
+----------------------------------------*/
+
+@media screen and (max-width: 700px){
+	#Beers {
+		padding-top: 5vh;
+		height: 600vh;
+	}
+	.cerveza {
+		width: 90%;
+		height: 50vh;
+		margin: 0 5% 10vh 5%;
+	}
+	
+
+
+	.mostrar-todo  {
+  	width: 50%;
+  	height: 40px;
+  	position: absolute;
+  	color: #000000;
+  	left: 55%;
+  	transform: translate(-50%, -40%);
+  	border: 2px solid #000000;
+	}
+}
+
+/*==========================================
+--------------------------------------------
+------Pantallas menores a 960px-------------
+--------------------------------------------
+==========================================*/
+@media only screen and (min-width: 960px){
+.section {
+	box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    float: left;
+}
+
+
+.section i {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  color: #fff;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -16px;
+}
+
+
+
+.frase{
+	height: 10vh;
+	background-color: white;
+}
+
+
+.section:nth-of-type(7) {
+	height: 80vh;
+	background: white;
+}
+
+
+.section:nth-of-type(9) {
+	height:70vh;
+	background-color: white;
+}
+
+
+#Footer{
+	background-color: white;
+	}
+}
+
+/*---------------------------------------
+------Pantallas mayores a 960px----------
+----------------------------------------*/
+@media only screen and (max-width: 960px){
+	.section {
+	box-sizing: border-box;
+    width: 100%;
+    padding-top: 10vh;
+    position: relative;
+    float: left;
+	}
+
+	.section i {
+	  width: 32px;
+	  height: 32px;
+	  position: absolute;
+	  color: #fff;
+	  bottom: 5%;
+	  left: 50%;
+	  margin-left: -16px;
+	}
+
+
+	.section:nth-of-type(7) {
+		height: 100vh;
+		background: black;
+	}
+
+	.section:nth-of-type(9) {
+		height:80vh;
+		background-color: white;
+	}
+
+}
+
+/*==============================================
+------------------------------------------------
+----------------Servicios-----------------------
+------------------------------------------------
+==============================================*/
+
+
+/*---------------------------------------------
+			Servicios pantalla grande
+---------------------------------------------*/
+
+
+@media only screen and (min-width: 968px){
+#services{
+	height: 100vh;
+	width: 100%;
+}
+.service {
+	position: relative;
+	height: 100vh;
+	width: 50%;
+	float: left;
+	
+}
+.opacidad {
+	z-index: 30;
+	background: rgba(0,0,0,0.3);
+	height: 100%;
+}
+.opacidad:hover {
+		background: rgba(0,0,0,0.0);
+}
+.service:nth-of-type(1){
+	background-image: url("http://i.imgur.com/B0niN.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+.service:nth-of-type(2){
+	background-image: url("http://basilstravels.com/wp-content/uploads/2014/06/P6212830.jpg");
+	background-size: cover;
+	height: 62vh;
+	
+}
+.service:nth-of-type(3){
+	background-image: url("http://farm8.static.flickr.com/7191/7063326143_b8ebdfc4d9.jpg");
+	background-size: cover;
+	height: 38vh;
+}
+
+.service p{
+	position: absolute;
+	width: 80%;
+	color: white;
+	text-align: center;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400px;
+	font-size: 1em;
+}
+.service ul li:hover{
+	font-size: 1.1em;
+	color: #fb7e29;
+}
+
+.service h1{
+	position: absolute;
+	text-align: center;
+	color: white;
+	left: 50%;
+	transform: translate(-50%);
+	top:2%;
+	font-family: 'Lobster', cursive;
+	font-size: 2em;
+	border: 2px solid white;
+	border-collapse: separate;
+	border-spacing: 15px 15px;
+}
+
+.service:hover h1{
+	border: 2px solid white;
+	color: black;
+	background-color: white;
+	transition: 0.9s;
+}
+.service ul{
+	position: absolute;
+	width: 50%;
+	text-align: center;
+	left: 47%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.service li{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400px;
+	font-size: 1em;
+	color: white;
+    list-style-type: none;
+}
+
+}
+
+/* ============================================================
+  				Servicios smartPhone
+============================================================ */
+@media only screen and (max-width: 968px){
+
+	#services{
+	height: 300vh;
+	width: 100%;
+	}
+	
+	.row{
+		width: 100%;
+	}
+	.opacidad {
+	z-index: 30;
+	background: rgba(0,0,0,0.3);
+	height: 100vh;
+	}
+	
+	.service{
+		position: relative;
+		width: 100%;	
+	}
+	
+	.service:nth-of-type(1){
+	background-image: url("http://i.imgur.com/B0niN.jpg");
+	background-size: cover;
+	height: 100vh;
+	}
+	
+	.service:nth-of-type(2){
+		background-image: url("http://basilstravels.com/wp-content/uploads/2014/06/P6212830.jpg");
+		background-size: cover;
+		height: 100vh;	
+	}
+	.service:nth-of-type(3){
+		background-image: url("http://farm8.static.flickr.com/7191/7063326143_b8ebdfc4d9.jpg");
+		background-size: cover;
+		height: 100vh;
+	}
+	
+	.service h1{
+		position: absolute;
+		text-align: center;
+		color: white;
+		left: 50%;
+		transform: translate(-50%);
+		top:5%;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 400px;
+		font-size: 2em;
+		border: 2px solid white;
+		border-collapse: separate;
+
+	}
+	
+	.service p{
+		position: absolute;
+		width: 80%;
+		color: white;
+		text-align: center;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		font-family: 'Oswald', sans-serif;
+		font-weight: 400px;
+		font-size: 1em;
+		}
+		
+	.service ul{
+		position: absolute;
+		width: 80%;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.service ul li{
+		font-family: 'Oswald', sans-serif;
+		font-weight: 400px;
+		text-align: center;
+		font-size: 1em;
+		color: white;
+		list-style-type: none;
+	}
+}
+
+
+/*==============================================
+------------------------------------------------
+-----------------acerca-------------------------
+------------------------------------------------
+==============================================*/
+
+/*-----------------------------------------------
+				Acerca pantalla grande
+-----------------------------------------------*/
+
+@media screen and (min-width: 960px){
+
+.row {
+	margin: 0 -10px;
+	margin-bottom: 20px;
+}
+[class*="col-1-4"]{
+    float: left;
+    width: 20%;
+    height: 50vh;
+  }
+
+/*#About {
+  position: relative;
+  height: 80vh;
+}
+
+#About .persona:first-child{
+	position: absolute;
+  	margin-left: 5%;
+		}
+#About .persona:nth-child(2) {
+	position: absolute;
+  	margin-left: 25%;
+	}
+#About .persona:nth-child(3) {
+	position: absolute;
+  	margin-left: 50%;
+	}
+
+#About .persona:last-child{
+	     position: absolute;
+ 		 margin-left: 50%;
+		}
+
+#About .persona h1 {
+  position: absolute;
+  color: black;
+  margin-top: 4%;
+  margin-left: 12.5%;
+  font-size: 1em; 
+  font-weight: 100;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#About .persona p {
+  display: block;
+  color: white;
+  margin-left: 4%;
+  margin-top: 7%;
+  width: 25%;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 100;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+#About .persona.hover p{
+  position: absolute;
+  display: block;
+  color: black;  
+  width: 25%;
+  margin-top: 2%;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 100;
+  font-size: 0.8em;
+  text-align: center;
+  transition: 0.9s;
+}
+
+
+
+
+#About .persona {
+  display: block;
+  width: 25%;  
+  margin-top: 90px;
+  float: left;
+}
+
+#About .persona img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+#About .persona.hover{
+  margin-top: 0;  
+  transition: all 0.9s;
+}
+#About .persona.hidden1{ 
+  position: absolute;
+  margin-top: 90px;
+  transition: all 0.5s; 
+}
+
+#About .persona hr{
+  position: relative;
+  width: 0;
+  border: 0px solid black;
+  margin: 12% 0 0 0;
+}
+
+#About .persona.hover hr{
+  display: block;
+  width: 10%;
+  height: 1px;
+  background-color: black;
+  position: relative;
+  margin: 12% 0 0 20%;
+  transition: all 1s;
+}*/
+
+}
+
+/*-----------------------------------
+		Acerca pantalla chica
+-----------------------------------*/
+
+@media screen and (max-width: 960px){
+
+	.row {
+    	margin-right: 0;
+    	margin-left: 0;
+	}
+
+	#About {
+		background: white;
+  		position: relative;
+  		height: 400vh;
+  		padding: 0;
+  		margin: 0;
+  		left: 0;
+  		right: 0;
+	}
+	
+	#About .persona{
+		position: relative;
+		width: 100%;
+		height: 80vh;
+		float: left;	
+		left: 0;
+		right: 0;
+		padding: 0;
+		margin: 0;
+	}
+	
+	#About .persona img{
+		width: 100%;
+		height: 50vh;
+	}
+	
+	#About hr{
+		display: none;
+	}
+	
+	#About .persona p{
+		width: 90%;
+		color: black;
+		left: 10%;
+		right: 10%;
+		margin-left: 10%;
+	}
+	
+	#About .persona h1{
+		color: black;
+		font-size: 2em;
+	}
+	
+}
+
+/*===================================
+-------------------------------------
+------------Contacto-----------------
+-------------------------------------
+===================================*/
+
+#Contact p{
+	color: red;
+	font-size: 0.8em;
+	margin-left: 65%;
+	-webkit-transform: translate(-65%);
+}
+
+/*-------------------------------------
+            vista grande 
+--------------------------------------*/
+@media screen and (min-width: 960px){
+		
+	#Contact input {
+	margin: 0 35% 2% 35%;
+	width: 30%;
+	display: block;
+	height: 5vh;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1em;
+	color: black;
+	text-align: center;	 
+	}
+	
+	#Contact input[type="textarea"]{
+		height: 15vh;
+	}
+
+	#Contact input:focus {
+		border: solid 2px orange;
+	}
+
+	#Contact button {
+	display: block;
+	background: none;
+	border: none;
+	height: 5vh;
+	width: 30%;
+	text-align: center;
+	color: black;
+	font-size: 1.5em;
+	margin: 0 35% 0 35%;
+	font-family: 'Roboto Slab', serif;
+	}
+}
+
+/*-------------------------------------
+			vista chica 
+--------------------------------------*/
+
+
+@media screen and (max-width: 960px){
+	#Contact input {
+	display: block;
+	height: 5vh;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1em;
+	color: black;
+	text-align: center;	 
+	}
+
+	#Contact input[type="textarea"]{
+		height: 10vh;
+	}
+
+	#Contact input:focus {
+		border: solid 2px orange;
+	}
+
+	#Contact button {
+	display: block;
+	background: none;
+	border: none;
+	height: 5vh;
+	width: 40%;
+	text-align: center;
+	color: black;
+	font-size: 1.5em;
+	margin: 0 30% 0 30%;
+	font-family: 'Roboto Slab', serif;
+	}
+}
+
+
+
+
+
+

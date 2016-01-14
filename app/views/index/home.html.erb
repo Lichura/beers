@@ -1,2 +1,284 @@
-<h1>Index#home</h1>
-<p>Find me in app/views/index/home.html.erb</p>
+
+<head>
+	<meta charset='utf-8'/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>	
+<header>
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">		
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			  </button>
+			  <a class="navbar-brand" href="#Gallery"><img src="http://i.imgur.com/Fl68w7C.png" alt="beertruck logo"/></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav">
+				<li><a href="#Gallery">Home</a></li>
+				<li><a href="#frase1">Services</a></li>
+				<li><a href="#Beers">Beers</a></li>
+				<li><a href="#frase3">About Us</a></li>
+				<li><a href="#frase4">Contact Us</a></li>
+			  </ul>
+			</div>
+  		</div>
+		
+		</nav>
+	</header>
+	<div class="section" id="Gallery">
+		<ul class="slides">
+  			<input type="radio" name="radio-btn" id="img-1" checked />
+  			<li class="slide-container">
+   				<div class="slide">
+   				      	<video muted autoplay loop id="video1" width="100%">
+    							<source src="https://www.dropbox.com/sm/hls_playlist/s/omzsmqxl59ek7so/Videos/TheCraftbeerTruck_instagram_presentation_v4.mp4?secure_hash=AAAglZIhLf-2QVPKeJQdQNo5a" type="video/mp4">
+  						</video> 			    
+    			</div>
+    			<div class="galeria">
+      				<label for="img-6" class="prev">&#x2039;</label>
+      				<label for="img-2" class="next">&#x203a;</label>
+    			</div>
+  			</li>
+  			<input type="radio" name="radio-btn" id="img-2" />
+  				<li class="slide-container">
+    				<div class="slide">
+						<img src="http://imgur.com/rftszMr.jpg"/>
+    				</div>
+    				<div class="galeria">
+      					<label for="img-1" class="prev">&#x2039;</label>
+      					<label for="img-3" class="next">&#x203a;</label>
+    				</div>
+  				</li>
+  			<input type="radio" name="radio-btn" id="img-3" />
+  				<li class="slide-container">
+    				<div class="slide">
+      					<img src="http://imgur.com/2dwAnsk.jpg"/>
+    				</div>
+    				<div class="galeria">
+      					<label for="img-2" class="prev">&#x2039;</label>
+      					<label for="img-4" class="next">&#x203a;</label>
+    				</div>
+  				</li>
+  			<input type="radio" name="radio-btn" id="img-4" />
+  				<li class="slide-container">
+    				<div class="slide">
+      					<img src="http://imgur.com/gGNHHZz.jpg"/>
+   					</div>
+    				<div class="galeria">
+      					<label for="img-3" class="prev">&#x2039;</label>
+      					<label for="img-5" class="next">&#x203a;</label>
+    				</div>
+  				</li>
+  			<input type="radio" name="radio-btn" id="img-5" />
+  				<li class="slide-container">
+    				<div class="slide">
+      					<img src="http://imgur.com/mDxABgp.jpg"/>
+    				</div>
+    				<div class="galeria">
+     					<label for="img-4" class="prev">&#x2039;</label>
+      					<label for="img-6" class="next">&#x203a;</label>
+    				</div>
+  				</li>
+  			<input type="radio" name="radio-btn" id="img-6" />
+  				<li class="slide-container">
+    				<div class="slide">
+      					<img src="http://imgur.com/VUj6Gqr.jpg"/>
+    				</div>
+    				<div class="galeria">
+      					<label for="img-5" class="prev">&#x2039;</label>
+      					<label for="img-1" class="next">&#x203a;</label>
+    				</div>
+  				</li>
+  			<li class="galeria-dots">
+    			<label for="img-1" class="galeria-dot" id="img-dot-1"></label>
+    			<label for="img-2" class="galeria-dot" id="img-dot-2"></label>
+    			<label for="img-3" class="galeria-dot" id="img-dot-3"></label>
+    			<label for="img-4" class="galeria-dot" id="img-dot-4"></label>
+    			<label for="img-5" class="galeria-dot" id="img-dot-5"></label>
+    			<label for="img-6" class="galeria-dot" id="img-dot-6"></label>
+  			</li>
+		</ul>		
+	</div>
+	<div class="section frase" id="frase1">
+		<h1>Cuidemos el agua, tomemos cerveza.</h1>
+	</div>
+  	<div class="section" id="Services"> 
+		<div class="col-1-3 service">
+			<div class="opacidad">
+				<h1>Que hacemos?</h1>
+				<p>(explicaría como es el servicio, como nos contratan, 
+				que podes elegir las cervezas que queres tirar, 
+				que vamos a un evento privado y cobramos por litros o 
+				vamos aun evento y cobramos ticket en el lugar. etc. 
+				Que hay 6 opciones de cervezas...)</p>
+			</div>
+		</div>
+		<div class="col-1-3 service">
+			<div class="opacidad">		
+				<h1>Quienes somos?</h1>
+				<p> THE CRAFTBEER TRUCK es un
+					PUB DE CERVEZAS ARTESANALES
+					que se traslada a donde quieras!.</br>
+					Un autentico FESTIVAL CERVECERO
+					para Eventos Privados y Corporativos
+					que permite acercar una 
+					experiencia original y de vanguardia
+					a todos los invitados.</br></br>
+					THE CRAFTBEER TRUCK cuenta con 
+					capacidad para servir 2000 litros de 
+					cervezas rojas, negras y rubias de 
+					distintos estilos y variedades</br></br>
+					Viví la experiencia, donde quieras y cuando quieras !</p>
+
+			</div>
+		</div>
+		<div class="col-1-3 service">
+			<div class="opacidad">
+			<h1>Nuestros servicios</h1>
+				<ul>
+					<li>Eventos Privados</li>
+					<li>Festivales</li>
+					<li>Alquiler del BT</li>
+					<li>Recitales</li>
+					<li>Eventos Corporativos</li>
+					<li>Campañas y acciones de marketing</li>
+				</ul>
+			</div>
+		</div>		
+  		<a href="#Gallery"><i class="fa fa-chevron-up fa-2x"></i></a>
+  	</div>
+  	<div class="section frase" id="frase2">
+		<h1>Una buena cerveza se detecta al sorbo, pero es mejor asegurarse. </h1>
+	</div>
+	<div class="section" id="Beers">
+			<div class="cerveza">
+				<img src="http://s3-media3.fl.yelpcdn.com/bphoto/G-8lrglzRaWPOpIc4KyFMQ/348s.jpg"/>
+				<div class="img-on-top">
+					<a class="img-expand" href="#">Antares</a>
+				</div>	
+			</div>
+			<div class="cerveza">
+				<img src="http://www.puntocervecero.com.ar/wp-content/uploads/2014/07/jarva5.jpg"/>
+				<div class="img-on-top">
+					<a class="img-expand" href="#">Jarva</a>
+				</div>	
+			</div>
+			<div class="cerveza">
+				<img src="http://uploads.striking.ly/page/images/custom/4817.png?1347561139"/>
+				<div class="img-on-top">
+					<a class="img-expand" href="#">Grunge</a>
+				</div>	
+			</div>
+			<div class="cerveza">
+				<img src="https://pbs.twimg.com/profile_images/456087531793027073/a1O6_Dld_400x400.jpeg"/>
+				<div class="img-on-top">
+					<a class="img-expand" href="#">Dos Patrias</a>
+				</div>	
+			</div>
+			<div class="cerveza">
+				<img src="https://pbs.twimg.com/profile_images/596072109408915456/foLWg85_.jpg"/>
+				<div class="img-on-top">
+					<a class="img-expand" href="#">Beata</a>
+				</div>	
+			</div>
+			<div class="cerveza">
+				<img src="https://lh4.googleusercontent.com/-OQPGA5i5lXI/TX5FnfIUR5I/AAAAAAAAAW0/Q3ijvdjYhT8/s1600/gambrinus.gif"/>
+				<div class="img-on-top">
+					<a class="img-expand" href="#">Gambrinus</a>
+				</div>	
+			</div>
+			<div class="cerveza">
+				<img src="https://pbs.twimg.com/profile_images/535893499254562816/B07ktl8Q.jpeg"/>
+				<div class="img-on-top">
+					<a class="img-expand" href="#">Siete Colores</a>
+				</div>	
+			</div>
+			<div class="cerveza">
+				<img src="http://1.bp.blogspot.com/_179Y3w6OXic/ScbvSyYZqsI/AAAAAAAABow/VJ9Jt_Exf50/s200/breoghan.jpeg"/>
+				<div class="img-on-top">
+					<a class="img-expand" href="#">Breoghan</a>
+				</div>	
+			</div>
+			<div class="cerveza">
+				<img src="http://www.bullerpub.com/images/public/preHome.jpg"/>
+				<div class="img-on-top">
+					<a class="img-expand" href="#">Buller</a>
+				</div>	
+			</div>
+			<div class="cerveza">
+				<img src="http://www.almacerveza.cl/wp-content/uploads/logo-cork.jpg"/>
+				<div class="img-on-top">
+					<a class="img-expand" href="#">Cork</a>
+				</div>	
+			</div>
+		<!--<div class="mostrar-todo"><span>Mostrar todo</span></div>-->
+	</div>
+	<div class="section frase" id="frase3">
+		<h1>La cerveza es la mejor farmacia. Proverbio Alemán. </h1>
+	</div>
+	<!--<div class="section clearfix" id="About">
+		<h1>Acerca de nosotros</h1>
+		<div class="row clearfix">
+		<div class="col-1-4 persona">
+			<img src="https://photos-1.dropbox.com/t/2/AACKgd2phoGOipE4hmbMQdtfylYpNN9MsGjRm8FidpjOgA/12/5144655/jpeg/32x32/8_0-0-720-720-720-1080/1450663200/0/2/20151201%20TCBT%20-%20Rapsodia%20-%20backPrensa%20-%20015.jpg/EN_77AMYlMoEIAcoBw/ZU8i2YUjWcp7hELO1oDhy348aS1iybK6DKIoHCNqpw4?size_mode=3&size=1024x768" alt="Ezequiel Parrilla"/>
+		    <h1>Ezequiel Parrilla</h1>
+		    <hr>
+			<p>Soy el parri, me gusta hacer cervezas y tambien me gusta liniers</p>
+		</div>
+		<div class="col-1-4 persona">
+			<img src="http://vignette3.wikia.nocookie.net/lossimpson/images/1/16/Guy_Incognito.png/revision/latest?cb=20100401233011&path-prefix=es" alt="Cosme Fulanito"/>
+			<h1>Gonzalo Piazza</h1>
+			<hr>
+			<p>Buenas noches señores. Molesto con una copilla por favorrr</p>
+		</div>
+		<div class="col-1-4 persona">
+			<img src="https://photos-6.dropbox.com/t/2/AACu-eZTo9Zvt9vf5UDffPizQXuXZ_FyEDsMieBfvZvXoA/12/5144655/jpeg/32x32/8_0-0-720-720-720-1080/1450663200/0/2/20151201%20TCBT%20-%20Rapsodia%20-%20backPrensa%20-%20010.jpg/EN_77AMYlMoEIAcoBw/0uvp6sK8yu2NYpZKT0RvPfERVjJ9kDsXV2OIbMp-EyA?size_mode=3&size=1024x768" alt="Mike wazousky"/>
+			<h1>Mike Wazousky</h1>
+			<hr>
+			<p>Soy tan romántico que a veces pienso que debería casarme conmigo mismo</p>
+		</div>
+		<div class="col-1-4 persona">
+			<img src="http://img2.wikia.nocookie.net/__cb20131225010631/disney/images/1/1f/FMSTFIM15.png" alt="Mike wazousky"/>
+			<h1>Mike Wazousky</h1>
+			<hr>
+			<p>Soy tan romántico que a veces pienso que debería casarme conmigo mismo</p>
+		</div>
+		</div>
+		<a href="#Gallery"><i class="fa fa-chevron-up fa-2x"></i></a>
+	</div>-->
+	<div class="section frase" id="frase4">
+		<h1>Todo el mundo tiene que creer en algo... Yo creo que me tomaré otra cerveza</h1>
+	</div>
+	<div class="section" id="Contact"> 
+		<h1> Contacto </h1>
+		<form action="index/home" method="post">
+		<input type="text" name="nombre" placeholder="Nombre"></input>
+		<input type="email" name="mail" placeholder="Mail"></input>
+		<input type="textarea" name="consulta" placeholder="Consulta"></input>
+		<button type="submit">enviar</button>
+		</form>
+		<a href="#Gallery"><i class="fa fa-chevron-up fa-2x"></i></a>
+	</div>
+	<div class="section" id="Footer">
+		<div class="row clearfix">
+				<img id="footer-logo" src="http://i.imgur.com/Fl68w7C.png" alt="beertruck logo"/>		
+			<div class="footer-frase">
+				<h1>Para conocer mas sobre nosotros, no dudes en ingresar a nuestras redes sociales</h1>
+				<h1>Suscribite a Beertruck para recibir las novedades.</h1>
+				<div id="suscribe">
+					<input type="email" placeholder="Juan@correo.com"></input>
+					<button type="submit">OK</button>
+				</div>
+			</div>
+			<div class="logos">
+				<ul>
+					<li><a href="http://www.Facebook.com"><img src="https://www.kennesaw.edu/images/global/social/facebook_round.png"/></a></li>
+					<li><a href="http://www.twitter.com"><img src="http://www.kompaworld.com/image/photopage/SocialMediaicons-round-TWITTER.png"/></a></li>
+					<li><a href="http://www.instagram.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Instagram_circle.svg/2000px-Instagram_circle.svg.png"/></a></li>
+					<li><a href="http://www.pinterest.com"><img src="https://www.impactdesignhub.org/wp-content/themes/magazine/images/pinterest_gray.png"/></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>

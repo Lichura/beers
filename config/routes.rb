@@ -1,8 +1,21 @@
 Rails.application.routes.draw do
-  get 'consultas/new'
+   get 'consultas/index'
+
 
   get 'index/home'
+  post "/" => "static#create"
 
+  # The priority is based upon order of creation: first created -> highest priority.
+  # See how all your routes lay out with "rake routes".
+
+  # You can have the root of your site routed with "root"
+  root 'index#home'
+
+  get 'contact' => 'index#contacto'
+
+  get 'nueva_consulta' => 'index#nueva_consulta'
+  post 'index/home' => 'index#home'
+  post 'consulta' => 'consultas#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
