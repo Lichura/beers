@@ -15,7 +15,8 @@ Rails.application.routes.draw do
 
   get 'nueva_consulta' => 'index#nueva_consulta'
   post 'index/home' => 'index#home'
-  post 'consulta' => 'consultas#create'
+  #post 'consulta' => 'consultas#create'
+  post 'consulta' => 'index#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

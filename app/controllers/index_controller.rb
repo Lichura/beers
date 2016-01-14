@@ -1,24 +1,20 @@
 class IndexController < ApplicationController
 
   def home
-  	if request.post?
-  		@consultas = Consultas.new(params[:consultas])
-  		enviar_mail(@consultas)
-  	end
   end
 
   def new
-  	@consultas = Consultas.new
+  	@consultas = Persona.new
   end
 
   def create
-    @consultas = Consultas.new(params[:consultas])
-    if @consulta.valid?
+    @consultas = Persona.new(params[:consultas])
+    if @consultas.valid?
       # TODO send message here
       enviar_mail(@consultas)
       redirect_to root_url, notice: "Message sent! Thank you for contacting us."
     else
-      render "new"
+      redirect_to root_url
     end
   end
 
