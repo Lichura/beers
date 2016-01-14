@@ -87,4 +87,5 @@ Rails.application.configure do
    :password             => 'martin2015',
    :authentication       => :login,
    :enable_starttls_auto => true
+ }
 end
