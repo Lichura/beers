@@ -85,7 +85,8 @@ Rails.application.configure do
    :port                 => 587,
    :user_name            => 'prueba@thecraftbeertruck.com.ar',
    :password             => 'prueba2015',
-   :authentication       => :login,
+   :authentication       => :plain,
    :enable_starttls_auto => true
+   :openssl_verify_mode  => 'none'
  }
 end

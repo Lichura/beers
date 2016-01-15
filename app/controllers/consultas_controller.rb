@@ -13,6 +13,7 @@ class ConsultasController < ApplicationController
       enviar_mail(@consultas)
       redirect_to root_url, notice: "Message sent! Thank you for contacting us."
     else
+      flash [:alert] = "Por favor complete todos los campos"
       render "new"
     end
   end
