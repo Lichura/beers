@@ -1,7 +1,7 @@
 class UserMailer < ApplicationMailer
 
 
-  default from: "mbcontable@zoho.com"
+  default from: "prueba@thecraftbeertruck.com.ar"
 
   def mailer(consulta)
   	@consulta = consulta
