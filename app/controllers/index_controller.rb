@@ -8,13 +8,13 @@ class IndexController < ApplicationController
   end
 
   def create
-    @consultas = Persona.new(params[:consultas])
+    @consultas = Persona.new(params[:consulta])
     if @consultas.valid?
       # TODO send message here
       enviar_mail(@consultas)
       redirect_to root_url, notice: "Message sent! Thank you for contacting us."
     else
-      redirect_to root_url
+      redirect_to root_url, notice: "Something goes wrong.."
     end
   end
 
