@@ -251,7 +251,8 @@
 	<div class="section frase" id="frase4">
 		<h1>Todo el mundo tiene que creer en algo... Yo creo que me tomaré otra cerveza</h1>
 	</div>
-
+	<div class="section" id="Contact"> 
+		<h1> Contacto </h1>
 	<%= form_for :consulta, :url => { :action => :create } do |f| %>
 	<div class="input"><%= f.text_field :name %></div>
 	<div class="input"><%= f.text_field :mail %></div>
@@ -259,7 +260,7 @@
 	<div class="button"><%= f.submit 'guardar'%></div>
 
 	<% end %>
-
+</div>
 	<!--<div class="section" id="Contact"> 
 		<h1> Contacto </h1>
 		<form action="index/home" method="post">
