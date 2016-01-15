@@ -252,11 +252,11 @@
 		<h1>Todo el mundo tiene que creer en algo... Yo creo que me tomaré otra cerveza</h1>
 	</div>
 
-	<%= form_for :index, :url => { :action => :create } do |f| %>
-	<%= f.text_field :name %>
-	<%= f.text_field :mail %>
-	<%= f.text_field :consulta %>
-	<%= f.submit 'guardar'%>
+	<%= form_for :consulta, :url => { :action => :create } do |f| %>
+	<div class="input"><%= f.text_field :name %></div>
+	<div class="input"><%= f.text_field :mail %></div>
+	<div class="input"><%= f.text_field :consulta %></div>
+	<div class="button"><%= f.submit 'guardar'%></div>
 
 	<% end %>
 
