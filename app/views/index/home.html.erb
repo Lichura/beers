@@ -254,23 +254,15 @@
 	<div class="section" id="Contact"> 
 		<h1> Contacto </h1>
 	<%= form_for :consulta, :url => { :action => :create } do |f| %>
-	<div class="input"><%= f.text_field :name %></div>
-	<div class="input"><%= f.text_field :mail %></div>
-	<div class="input"><%= f.text_field :consulta %></div>
-	<div class="button"><%= f.submit 'guardar'%></div>
+	<%= f.text_field :name, :class => 'input', :placeholder => 'Nombre y Apellido'  %>
+	<%= f.text_field :mail, :class => 'input', :placeholder => 'juan@mail.com' %>
+	<%= f.text_field :consulta, :class => 'input', :placeholder => 'Ingrese su consulta' %>
+	<%= f.submit 'enviar', :class => 'button'%>
 
 	<% end %>
-</div>
-	<!--<div class="section" id="Contact"> 
-		<h1> Contacto </h1>
-		<form action="index/home" method="post">
-		<input type="text" name="nombre" placeholder="Nombre"></input>
-		<input type="email" name="mail" placeholder="Mail"></input>
-		<input type="textarea" name="consulta" placeholder="Consulta"></input>
-		<button type="submit">enviar</button>
-		</form>
+	</div>
+
 		<a href="#Gallery"><i class="fa fa-chevron-up fa-2x"></i></a>
-	</div>-->
 	<div class="section" id="Footer">
 		<div class="row clearfix">
 				<img id="footer-logo" src="http://i.imgur.com/Fl68w7C.png" alt="beertruck logo"/>		
