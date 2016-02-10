@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :nosotros
+  resources :servicios
+  resources :frases
+  resources :cervezas
    get 'consultas/index'
 
 

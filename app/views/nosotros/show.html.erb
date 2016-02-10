@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @nosotro.nombre %>
+</p>
+
+<p>
+  <strong>Descipcion:</strong>
+  <%= @nosotro.descipcion %>
+</p>
+
+<p>
+  <strong>Foto:</strong>
+  <%= @nosotro.foto %>
+</p>
+
+<%= link_to 'Edit', edit_nosotro_path(@nosotro) %> |
+<%= link_to 'Back', nosotros_path %>

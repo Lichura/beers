@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @cerveza.marca %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @cerveza.nombre %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @cerveza.descripcion %>
+</p>
+
+<p>
+  <strong>Stock:</strong>
+  <%= @cerveza.stock %>
+</p>
+
+<%= link_to 'Edit', edit_cerveza_path(@cerveza) %> |
+<%= link_to 'Back', cervezas_path %>

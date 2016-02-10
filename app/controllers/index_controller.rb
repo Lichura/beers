@@ -1,8 +1,11 @@
 class IndexController < ApplicationController
 
   def home
+    @cervezas = Cerveza.all
+    @frases = Frase.all
+    @nosotros = Nosotro.all
+    @servicios = Servicio.all
   end
-
   def new
   	@consultas = Persona.new
   end

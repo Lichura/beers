@@ -816,7 +816,7 @@ nav a:hover {
 
 @media screen and (min-width: 960px){
 
-.row {
+/*.row {
 	margin: 0 -10px;
 	margin-bottom: 20px;
 }
@@ -824,14 +824,21 @@ nav a:hover {
     float: left;
     width: 20%;
     height: 50vh;
-  }
+  }*/
 
 #About {
   position: relative;
   height: 80vh;
 }
 
-#About .persona:first-child{
+#About .persona{
+	display: block;
+	float: left;
+	width: 25%;
+	margin-top: 90px;
+}
+
+/*#About .persona:first-child{
 	position: absolute;
   	margin-left: 5%;
 		}
@@ -847,14 +854,12 @@ nav a:hover {
 #About .persona:last-child{
 	     position: absolute;
  		 margin-left: 70%;
-		}
+		}*/
 
 #About .persona h1 {
-  position: absolute;
   color: black;
   margin-top: 4%;
-  margin-left: 12.5%;
-  font-size: 1em; 
+  font-size: 1.5em; 
   font-weight: 100;
   font-family: 'Work Sans', sans-serif;
 }
@@ -862,52 +867,50 @@ nav a:hover {
 #About .persona p {
   display: block;
   color: white;
-  margin-left: 4%;
   margin-top: 7%;
-  width: 25%;
   font-family: 'Work Sans', sans-serif;
   font-weight: 100;
-  font-size: 0.8em;
+  font-size: 1em;
   text-align: center;
 }
 
 #About .persona.hover p{
-  position: absolute;
   display: block;
   color: black;  
-  width: 25%;
   margin-top: 2%;
   font-family: 'Work Sans', sans-serif;
   font-weight: 100;
-  font-size: 0.8em;
-  text-align: center;
+  font-size: 1em;
   transition: 0.9s;
+  text-align: center;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 
-
-
-#About .persona {
-  display: block;
-  width: 25%;  
-  margin-top: 90px;
-  float: left;
-}
 
 #About .persona img {
-  width: 50%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 50%;
+  text-align:center;
 }
 
 #About .persona.hover{
-  margin-top: 0;  
-  transition: all 0.9s;
+	display: block;
+	float: left;
+	width: 25%;
+  	margin-top: 0;  
+  	transition: all 0.9s;
 }
-#About .persona.hidden1{ 
+
+/*#About .persona.hidden1{ 
   position: absolute;
   margin-top: 90px;
   transition: all 0.5s; 
-}
+}*/
 
 #About .persona hr{
   position: relative;
@@ -918,11 +921,14 @@ nav a:hover {
 
 #About .persona.hover hr{
   display: block;
-  width: 10%;
-  height: 1px;
+  width: 20%;
+  height: 3px;
   background-color: black;
   position: relative;
-  margin: 12% 0 0 20%;
+  margin-top: 12%;
+  margin-left: 40%;
+  margin-right: 40%;
+
   transition: all 1s;
 }
 

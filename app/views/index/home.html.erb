@@ -102,7 +102,7 @@
 		</ul>		
 	</div>
 	<div class="section frase" id="frase1">
-		<h1>Cuidemos el agua, tomemos cerveza.</h1>
+		<h1><%= @frases[0].frase %></h1>
 	</div>
   	<div class="section" id="Services"> 
 		<div class="col-1-3 service">
@@ -150,106 +150,40 @@
   		<a href="#Gallery"><i class="fa fa-chevron-up fa-2x"></i></a>
   	</div>
   	<div class="section frase" id="frase2">
-		<h1>Una buena cerveza se detecta al sorbo, pero es mejor asegurarse. </h1>
+		<h1><%= @frases[1].frase %></h1>
 	</div>
+
+
 	<div class="section" id="Beers">
+			<% @cervezas.each do |cerveza| %>
 			<div class="cerveza">
-				<img src="http://s3-media3.fl.yelpcdn.com/bphoto/G-8lrglzRaWPOpIc4KyFMQ/348s.jpg"/>
-				<div class="img-on-top">
-					<a class="img-expand" href="#">Antares</a>
-				</div>	
+				<img src=<%= cerveza.nombre %> alt=<%= cerveza.marca %>/>
+				<div class="img-on-top"><a class="img-expand" href="#"><%= cerveza.marca %></a></div>
 			</div>
-			<div class="cerveza">
-				<img src="http://www.puntocervecero.com.ar/wp-content/uploads/2014/07/jarva5.jpg"/>
-				<div class="img-on-top">
-					<a class="img-expand" href="#">Jarva</a>
-				</div>	
-			</div>
-			<div class="cerveza">
-				<img src="http://uploads.striking.ly/page/images/custom/4817.png?1347561139"/>
-				<div class="img-on-top">
-					<a class="img-expand" href="#">Grunge</a>
-				</div>	
-			</div>
-			<div class="cerveza">
-				<img src="https://pbs.twimg.com/profile_images/456087531793027073/a1O6_Dld_400x400.jpeg"/>
-				<div class="img-on-top">
-					<a class="img-expand" href="#">Dos Patrias</a>
-				</div>	
-			</div>
-			<div class="cerveza">
-				<img src="https://pbs.twimg.com/profile_images/596072109408915456/foLWg85_.jpg"/>
-				<div class="img-on-top">
-					<a class="img-expand" href="#">Beata</a>
-				</div>	
-			</div>
-			<div class="cerveza">
-				<img src="https://lh4.googleusercontent.com/-OQPGA5i5lXI/TX5FnfIUR5I/AAAAAAAAAW0/Q3ijvdjYhT8/s1600/gambrinus.gif"/>
-				<div class="img-on-top">
-					<a class="img-expand" href="#">Gambrinus</a>
-				</div>	
-			</div>
-			<div class="cerveza">
-				<img src="https://pbs.twimg.com/profile_images/535893499254562816/B07ktl8Q.jpeg"/>
-				<div class="img-on-top">
-					<a class="img-expand" href="#">Siete Colores</a>
-				</div>	
-			</div>
-			<div class="cerveza">
-				<img src="http://1.bp.blogspot.com/_179Y3w6OXic/ScbvSyYZqsI/AAAAAAAABow/VJ9Jt_Exf50/s200/breoghan.jpeg"/>
-				<div class="img-on-top">
-					<a class="img-expand" href="#">Breoghan</a>
-				</div>	
-			</div>
-			<div class="cerveza">
-				<img src="http://www.bullerpub.com/images/public/preHome.jpg"/>
-				<div class="img-on-top">
-					<a class="img-expand" href="#">Buller</a>
-				</div>	
-			</div>
-			<div class="cerveza">
-				<img src="http://www.almacerveza.cl/wp-content/uploads/logo-cork.jpg"/>
-				<div class="img-on-top">
-					<a class="img-expand" href="#">Cork</a>
-				</div>	
-			</div>
+			<% end %>
 		<!--<div class="mostrar-todo"><span>Mostrar todo</span></div>-->
 	</div>
 	<div class="section frase" id="frase3">
-		<h1>La cerveza es la mejor farmacia. Proverbio Alemán. </h1>
+		<h1><%= @frases[2].frase %> </h1>
 	</div>
+
+
 	<div class="section clearfix" id="About">
 		<h1>Acerca de nosotros</h1>
 		<div class="row clearfix">
-		<div class="col-1-4 persona">
-			<img src="https://photos-1.dropbox.com/t/2/AACKgd2phoGOipE4hmbMQdtfylYpNN9MsGjRm8FidpjOgA/12/5144655/jpeg/32x32/8_0-0-720-720-720-1080/1450663200/0/2/20151201%20TCBT%20-%20Rapsodia%20-%20backPrensa%20-%20015.jpg/EN_77AMYlMoEIAcoBw/ZU8i2YUjWcp7hELO1oDhy348aS1iybK6DKIoHCNqpw4?size_mode=3&size=1024x768" alt="Ezequiel Parrilla"/>
-		    <h1>Ezequiel Parrilla</h1>
-		    <hr>
-			<p>Soy el parri, me gusta hacer cervezas y tambien me gusta liniers</p>
-		</div>
-		<div class="col-1-4 persona">
-			<img src="http://vignette3.wikia.nocookie.net/lossimpson/images/1/16/Guy_Incognito.png/revision/latest?cb=20100401233011&path-prefix=es" alt="Cosme Fulanito"/>
-			<h1>Gonzalo Piazza</h1>
-			<hr>
-			<p>Buenas noches señores. Molesto con una copilla por favorrr</p>
-		</div>
-		<div class="col-1-4 persona">
-			<img src="https://photos-6.dropbox.com/t/2/AACu-eZTo9Zvt9vf5UDffPizQXuXZ_FyEDsMieBfvZvXoA/12/5144655/jpeg/32x32/8_0-0-720-720-720-1080/1450663200/0/2/20151201%20TCBT%20-%20Rapsodia%20-%20backPrensa%20-%20010.jpg/EN_77AMYlMoEIAcoBw/0uvp6sK8yu2NYpZKT0RvPfERVjJ9kDsXV2OIbMp-EyA?size_mode=3&size=1024x768" alt="Mike wazousky"/>
-			<h1>Mike Wazousky</h1>
-			<hr>
-			<p>Soy tan romántico que a veces pienso que debería casarme conmigo mismo</p>
-		</div>
-		<div class="col-1-4 persona">
-			<img src="http://img2.wikia.nocookie.net/__cb20131225010631/disney/images/1/1f/FMSTFIM15.png" alt="Mike wazousky"/>
-			<h1>Mike Wazousky</h1>
-			<hr>
-			<p>Soy tan romántico que a veces pienso que debería casarme conmigo mismo</p>
-		</div>
+		<% @nosotros.each do |persona| %>
+			<div class="col-1-4 persona">
+				<img src=<%= persona.foto %> alt=<%= persona.nombre %> />
+				<h1><%= persona.nombre %></h1>
+				<hr>
+				<p><%= persona.descipcion %></p>
+			</div>	
+		<% end %>	
 		</div>
 		<a href="#Gallery"><i class="fa fa-chevron-up fa-2x"></i></a>
 	</div>
 	<div class="section frase" id="frase4">
-		<h1>Todo el mundo tiene que creer en algo... Yo creo que me tomaré otra cerveza</h1>
+		<h1><%= @frases[3].frase %></h1>
 	</div>
 	<div class="section" id="Contact"> 
 		<h1> Contacto </h1>
