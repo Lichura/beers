@@ -157,7 +157,7 @@
 	<div class="section" id="Beers">
 			<% @cervezas.each do |cerveza| %>
 			<div class="cerveza">
-				<img src=<%= cerveza.nombre %> alt=<%= cerveza.marca %>/>
+				<img src=<%= cerveza.foto %> alt=<%= cerveza.marca %>/>
 				<div class="img-on-top"><a class="img-expand" href="#"><%= cerveza.marca %></a></div>
 			</div>
 			<% end %>
