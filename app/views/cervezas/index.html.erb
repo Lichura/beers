@@ -20,9 +20,9 @@
         <td><%= cerveza.nombre %></td>
         <td><%= cerveza.descripcion %></td>
         <td><%= cerveza.stock %></td>
-        <td><%= link_to 'Show', cerveza %></td>
-        <td><%= link_to 'Edit', edit_cerveza_path(cerveza) %></td>
-        <td><%= link_to 'Destroy', cerveza, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', cerveza %></td>
+        <td><%= link_to 'Editar', edit_cerveza_path(cerveza) %></td>
+        <td><%= link_to 'Eliminar', cerveza, method: :delete, data: { confirm: 'Esta seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Cerveza', new_cerveza_path %>
+<%= link_to 'Nueva Cerveza', new_cerveza_path %>

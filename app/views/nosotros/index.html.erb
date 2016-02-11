@@ -18,9 +18,9 @@
         <td><%= nosotro.nombre %></td>
         <td><%= nosotro.descipcion %></td>
         <td><%= nosotro.foto %></td>
-        <td><%= link_to 'Show', nosotro %></td>
-        <td><%= link_to 'Edit', edit_nosotro_path(nosotro) %></td>
-        <td><%= link_to 'Destroy', nosotro, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', nosotro %></td>
+        <td><%= link_to 'Editar', edit_nosotro_path(nosotro) %></td>
+        <td><%= link_to 'Eliminar', nosotro, method: :delete, data: { confirm: 'Esta seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Nosotro', new_nosotro_path %>
+<%= link_to 'Nuevo Nosotros', new_nosotro_path %>

@@ -14,9 +14,9 @@
     <% @frases.each do |frase| %>
       <tr>
         <td><%= frase.frase %></td>
-        <td><%= link_to 'Show', frase %></td>
-        <td><%= link_to 'Edit', edit_frase_path(frase) %></td>
-        <td><%= link_to 'Destroy', frase, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', frase %></td>
+        <td><%= link_to 'Editar', edit_frase_path(frase) %></td>
+        <td><%= link_to 'Eliminar', frase, method: :delete, data: { confirm: 'Esta seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Frase', new_frase_path %>
+<%= link_to 'Nueva Frase', new_frase_path %>

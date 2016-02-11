@@ -8,16 +8,16 @@
 
 Cerveza.destroy_all
 
-Cerveza.create!({marca: "Antares", nombre: "http://s3-media3.fl.yelpcdn.com/bphoto/G-8lrglzRaWPOpIc4KyFMQ/348s.jpg", descripcion: "fria y rica", stock: true})
-Cerveza.create!({marca: "Jarva", nombre: "http://www.puntocervecero.com.ar/wp-content/uploads/2014/07/jarva5.jpg", descripcion: "riquisima", stock: true})
-Cerveza.create!({marca: "Grunge", nombre: "http://uploads.striking.ly/page/images/custom/4817.png?1347561139", descripcion: "", stock: true})
-Cerveza.create!({marca: "Dos patrias", nombre: "https://pbs.twimg.com/profile_images/456087531793027073/a1O6_Dld_400x400.jpeg", descripcion: "Dos Patrias", stock: true})
-Cerveza.create!({marca: "Beata", nombre: "https://pbs.twimg.com/profile_images/596072109408915456/foLWg85_.jpg", descripcion: "Beata", stock: true})
-Cerveza.create!({marca: "Gambrinus", nombre: "https://lh4.googleusercontent.com/-OQPGA5i5lXI/TX5FnfIUR5I/AAAAAAAAAW0/Q3ijvdjYhT8/s1600/gambrinus.gif", descripcion: "Gambrinus", stock: true})
-Cerveza.create!({marca: "Siete Colores", nombre: "https://pbs.twimg.com/profile_images/535893499254562816/B07ktl8Q.jpeg", descripcion: "Siete Colores", stock: true})
-Cerveza.create!({marca: "Breoghan", nombre: "http://1.bp.blogspot.com/_179Y3w6OXic/ScbvSyYZqsI/AAAAAAAABow/VJ9Jt_Exf50/s200/breoghan.jpeg", descripcion: "Breoghan", stock: true})
-Cerveza.create!({marca: "Buller", nombre: "http://www.bullerpub.com/images/public/preHome.jpg", descripcion: "Buller", stock: true})
-Cerveza.create!({marca: "Cork", nombre: "http://www.almacerveza.cl/wp-content/uploads/logo-cork.jpg", descripcion: "Cork", stock: true})
+Cerveza.create!({marca: "Antares", foto: "http://s3-media3.fl.yelpcdn.com/bphoto/G-8lrglzRaWPOpIc4KyFMQ/348s.jpg", descripcion: "fria y rica", stock: true})
+Cerveza.create!({marca: "Jarva", foto: "http://www.puntocervecero.com.ar/wp-content/uploads/2014/07/jarva5.jpg", descripcion: "riquisima", stock: true})
+Cerveza.create!({marca: "Grunge", foto: "http://uploads.striking.ly/page/images/custom/4817.png?1347561139", descripcion: "", stock: true})
+Cerveza.create!({marca: "Dos patrias", foto: "https://pbs.twimg.com/profile_images/456087531793027073/a1O6_Dld_400x400.jpeg", descripcion: "Dos Patrias", stock: true})
+Cerveza.create!({marca: "Beata", foto: "https://pbs.twimg.com/profile_images/596072109408915456/foLWg85_.jpg", descripcion: "Beata", stock: true})
+Cerveza.create!({marca: "Gambrinus", foto: "https://lh4.googleusercontent.com/-OQPGA5i5lXI/TX5FnfIUR5I/AAAAAAAAAW0/Q3ijvdjYhT8/s1600/gambrinus.gif", descripcion: "Gambrinus", stock: true})
+Cerveza.create!({marca: "Siete Colores", foto: "https://pbs.twimg.com/profile_images/535893499254562816/B07ktl8Q.jpeg", descripcion: "Siete Colores", stock: true})
+Cerveza.create!({marca: "Breoghan", foto: "http://1.bp.blogspot.com/_179Y3w6OXic/ScbvSyYZqsI/AAAAAAAABow/VJ9Jt_Exf50/s200/breoghan.jpeg", descripcion: "Breoghan", stock: true})
+Cerveza.create!({marca: "Buller", foto: "http://www.bullerpub.com/images/public/preHome.jpg", descripcion: "Buller", stock: true})
+Cerveza.create!({marca: "Cork", foto: "http://www.almacerveza.cl/wp-content/uploads/logo-cork.jpg", descripcion: "Cork", stock: true})
 
 
 Frase.destroy_all
