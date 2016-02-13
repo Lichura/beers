@@ -8,5 +8,4 @@ class Consultas
   	@consulta = consulta || ""
   end
 
-  validate :nombre, :mail, :consulta, presence: true
 end
