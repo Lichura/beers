@@ -41,7 +41,19 @@
       				<label for="img-2" class="next">&#x203a;</label>
     			</div>
   			</li>
-  			<input type="radio" name="radio-btn" id="img-2" />
+  			<% @galerias.each do |galeria| %>
+  			<input type="radio" name="radio-btn" id= <%= 'img-' + galeria.foto_numero.to_s %> />
+  				<li class="slide-container">
+    				<div class="slide">
+    					<img src=<%= galeria.foto %>/>
+    				</div>
+    				 <div class="galeria">
+      					<label for= <%= 'img-' + (galeria.foto_numero - 1).to_s %> class="prev">&#x2039;</label>
+      					<label for= <%= 'img-' + (galeria.foto_numero + 1).to_s %> class="next">&#x203a;</label>
+    				</div>
+    			</li>
+    		<% end %>	
+  			<!--<input type="radio" name="radio-btn" id="img-2" />
   				<li class="slide-container">
     				<div class="slide">
 						<img src="http://imgur.com/rftszMr.jpg"/>
@@ -54,7 +66,7 @@
   			<input type="radio" name="radio-btn" id="img-3" />
   				<li class="slide-container">
     				<div class="slide">
-      					<img src="http://imgur.com/2dwAnsk.jpg"/>
+      					<img src="http://i67.tinypic.com/4lrdzt.jpg"/>
     				</div>
     				<div class="galeria">
       					<label for="img-2" class="prev">&#x2039;</label>
@@ -90,7 +102,7 @@
       					<label for="img-5" class="prev">&#x2039;</label>
       					<label for="img-1" class="next">&#x203a;</label>
     				</div>
-  				</li>
+  				</li>-->
   			<li class="galeria-dots">
     			<label for="img-1" class="galeria-dot" id="img-dot-1"></label>
     			<label for="img-2" class="galeria-dot" id="img-dot-2"></label>

@@ -29,7 +29,16 @@ Frase.create!({frase: "Todo el mundo tiene que creer en algo... Yo creo que me t
 
 Nosotro.destroy_all
 
-Nosotro.create({nombre:"Ezequiel Parrilla", descipcion: "Soy el parri, me gusta hacer cervezas y tambien me gusta liniers", foto: "https://photos-1.dropbox.com/t/2/AACKgd2phoGOipE4hmbMQdtfylYpNN9MsGjRm8FidpjOgA/12/5144655/jpeg/32x32/8_0-0-720-720-720-1080/1450663200/0/2/20151201%20TCBT%20-%20Rapsodia%20-%20backPrensa%20-%20015.jpg/EN_77AMYlMoEIAcoBw/ZU8i2YUjWcp7hELO1oDhy348aS1iybK6DKIoHCNqpw4?size_mode=3&size=1024x768"})
-Nosotro.create({nombre:"Gonzalo Piazza<", descipcion: "Buenas noches señores. Molesto con una copilla por favorrr", foto: "http://vignette3.wikia.nocookie.net/lossimpson/images/1/16/Guy_Incognito.png/revision/latest?cb=20100401233011&path-prefix=es"})
-Nosotro.create({nombre:"Mike Wazousky", descipcion: "Soy tan romántico que a veces pienso que debería casarme conmigo mismo", foto: "https://photos-6.dropbox.com/t/2/AACu-eZTo9Zvt9vf5UDffPizQXuXZ_FyEDsMieBfvZvXoA/12/5144655/jpeg/32x32/8_0-0-720-720-720-1080/1450663200/0/2/20151201%20TCBT%20-%20Rapsodia%20-%20backPrensa%20-%20010.jpg/EN_77AMYlMoEIAcoBw/0uvp6sK8yu2NYpZKT0RvPfERVjJ9kDsXV2OIbMp-EyA?size_mode=3&size=1024x768"})
-Nosotro.create({nombre:"Mike Wazousky", descipcion: "Soy tan romántico que a veces pienso que debería casarme conmigo mismo", foto: "https://photos-6.dropbox.com/t/2/AACu-eZTo9Zvt9vf5UDffPizQXuXZ_FyEDsMieBfvZvXoA/12/5144655/jpeg/32x32/8_0-0-720-720-720-1080/1450663200/0/2/20151201%20TCBT%20-%20Rapsodia%20-%20backPrensa%20-%20010.jpg/EN_77AMYlMoEIAcoBw/0uvp6sK8yu2NYpZKT0RvPfERVjJ9kDsXV2OIbMp-EyA?size_mode=3&size=1024x768"})
+Nosotro.create!({nombre:"Ezequiel Parrilla", descipcion: "Soy el parri, me gusta hacer cervezas y tambien me gusta liniers", foto: 'http://i68.tinypic.com/2q9igw4.jpg'})
+Nosotro.create!({nombre:"Gonzalo Piazza", descipcion: "Buenas noches señores. Molesto con una copilla por favorrr", foto: "http://i63.tinypic.com/2wd4ion.jpg"})
+Nosotro.create!({nombre:"Mike Wazousky", descipcion: "Soy tan romántico que a veces pienso que debería casarme conmigo mismo", foto: "https://photos-6.dropbox.com/t/2/AACu-eZTo9Zvt9vf5UDffPizQXuXZ_FyEDsMieBfvZvXoA/12/5144655/jpeg/32x32/8_0-0-720-720-720-1080/1450663200/0/2/20151201%20TCBT%20-%20Rapsodia%20-%20backPrensa%20-%20010.jpg/EN_77AMYlMoEIAcoBw/0uvp6sK8yu2NYpZKT0RvPfERVjJ9kDsXV2OIbMp-EyA?size_mode=3&size=1024x768"})
+Nosotro.create!({nombre:"Mike Wazousky", descipcion: "Soy tan romántico que a veces pienso que debería casarme conmigo mismo", foto: "https://photos-6.dropbox.com/t/2/AACu-eZTo9Zvt9vf5UDffPizQXuXZ_FyEDsMieBfvZvXoA/12/5144655/jpeg/32x32/8_0-0-720-720-720-1080/1450663200/0/2/20151201%20TCBT%20-%20Rapsodia%20-%20backPrensa%20-%20010.jpg/EN_77AMYlMoEIAcoBw/0uvp6sK8yu2NYpZKT0RvPfERVjJ9kDsXV2OIbMp-EyA?size_mode=3&size=1024x768"})
+
+
+Galerium.destroy_all
+
+Galerium.create!({foto: "http://imgur.com/rftszMr.jpg", foto_numero: "2"})
+Galerium.create!({foto: "http://i67.tinypic.com/4lrdzt.jpg", foto_numero: "3"})
+Galerium.create!({foto: "http://imgur.com/gGNHHZz.jpg", foto_numero: "4"})
+Galerium.create!({foto: "http://imgur.com/mDxABgp.jpg", foto_numero: "5"})
+Galerium.create!({foto: "http://imgur.com/VUj6Gqr.jpg", foto_numero: "6"})

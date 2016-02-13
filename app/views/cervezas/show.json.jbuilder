@@ -1,1 +1,1 @@
-json.extract! @cerveza, :id, :marca, :nombre, :descripcion, :stock, :created_at, :updated_at
+json.extract! @cerveza, :id, :marca, :foto, :descripcion, :stock, :created_at, :updated_at

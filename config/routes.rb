@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :galeria
+  get 'menu' => 'menu#index'
+
+  resources :mensajes
   resources :nosotros
   resources :servicios
   resources :frases

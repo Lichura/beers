@@ -816,16 +816,6 @@ nav a:hover {
 
 @media screen and (min-width: 960px){
 
-/*.row {
-	margin: 0 -10px;
-	margin-bottom: 20px;
-}
-[class*="col-1-4"]{
-    float: left;
-    width: 20%;
-    height: 50vh;
-  }*/
-
 #About {
   position: relative;
   height: 80vh;
@@ -838,23 +828,7 @@ nav a:hover {
 	margin-top: 90px;
 }
 
-/*#About .persona:first-child{
-	position: absolute;
-  	margin-left: 5%;
-		}
-#About .persona:nth-child(2) {
-	position: absolute;
-  	margin-left: 25%;
-	}
-#About .persona:nth-child(3) {
-	position: absolute;
-  	margin-left: 50%;
-	}
 
-#About .persona:last-child{
-	     position: absolute;
- 		 margin-left: 70%;
-		}*/
 
 #About .persona h1 {
   color: black;
@@ -891,11 +865,10 @@ nav a:hover {
 
 
 #About .persona img {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   border-radius: 50%;
-  text-align:center;
 }
 
 #About .persona.hover{
@@ -1079,7 +1052,14 @@ nav a:hover {
 }
 
 
+/*===================================================
+=====================================================
+				frases
+=====================================================
+===================================================*/
 
-
+.frase{
+	font-size: 3em;
+}
 
 
