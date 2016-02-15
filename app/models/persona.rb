@@ -1,7 +1,7 @@
 class Persona
-	#include ActiveModel::Model
+	include ActiveModel::Model
 
-	#attr_accessor :name, :mail, :consulta
+	attr_accessor :name, :mail, :consulta
 
-	validates :name, :mail, :consulta, presence: true
+	#validates :name, :mail, :consulta, presence: true
 end
