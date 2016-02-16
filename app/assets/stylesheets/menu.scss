@@ -7,19 +7,17 @@
 /*------------------------------
 	Lineamientos generales
 --------------------------------*/
-/*body{
+body.menu{
 	font-family: 'Lobster', cursive;
 }
-h1{
-	font-size: 3em;
-}
 
-.container{
+
+.container.menu {
 	width: 100%;
 	background-color: rgb(220,215,211);
 }
 
-img{
+.col-md-4 img{
 	width: 200px;
 	height: 200px;
 }
@@ -31,4 +29,4 @@ img{
 
 .col-md-4 h2{
 	font-size: 2em;
-}*/
+}
