@@ -1,9 +1,34 @@
-<h1>Menu#index</h1>
-<p>Find me in app/views/menu/index.html.erb</p>
+<head>
+	<meta charset='utf-8'/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>	
+<h1>The Craft Beer Truck menu</h1>
 
-<%= link_to 'Cervezas', cervezas_path %>
-<%= link_to  'Mensajes', mensajes_path %>
-<%= link_to 'Nosotros', nosotros_path %>
-<%= link_to 'servicios', servicios_path %>
-<%= link_to 'frases', frases_path %>
 
+<div class= "container">
+	<div class="row">
+		<div class="col-md-4">
+			<%= link_to image_tag("http://alternativeberlin.com/cms/uploads/2014/03/Picture-1-Via-beerwrangler2.jpg", :border => 0), :action => 'index', :controller => 'cervezas', :class => 'dock-item' %><h2> Cervezas </h2>
+		</div>
+		<div class="col-md-4">
+			<%= link_to image_tag("http://onegoaradio.com/wp-content/uploads/2015/11/Contact-us-keyboard-key.jpg", :border => 0), :action => 'index', :controller => 'mensajes', :class => 'dock-item' %>
+			<h2>Mensajes</h2>
+		</div>
+		<div class="col-md-4">
+			<%= link_to image_tag("http://blog4businessowners.com/wp-content/uploads/2014/12/Who-are-we.jpg", :border => 0), :action => 'index', :controller => 'nosotros', :class => 'dock-item'%>
+			<h2>Nosotros</h2>
+		</div>
+		<div class="col-md-4">
+			<%= link_to image_tag("http://www.tapitdraughtservice.com/images/Refined/draught-image.jpg", :border => 0), :action => 'index', :controller => 'servicios', :class => 'dock-item' %>
+			<h2>Servicios</h2>
+		</div>
+		
+		<div class="col-md-4">
+			<%= link_to image_tag('https://secure.static.tumblr.com/d53c817fa7cf86dbfdab9c61bea8c713/xbfrde5/wIqnhevpi/tumblr_static_tumblr_static_2u19aldw77s4kk80ogsksgwg0_640.png', :border => 0), :action => 'index', :controller => 'frases', :class => 'dock-item'  %>
+			<h2>Frases</h2>
+		</div>
+		<div class="col-md-4">
+			<%= link_to image_tag('http://www.brevardnc.org/wp-content/uploads/2015/07/redot-fine-art-gallery.jpg' , :border => 0), :action => 'index', :controller => 'galeria', :class => 'dock-item'%>
+			<h2>Galeria</h2>
+		</div>
+</div>
