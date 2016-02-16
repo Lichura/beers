@@ -25,6 +25,7 @@ class IndexController < ApplicationController
 
   def enviar_mail(consulta)
   	UserMailer.mailer(consulta).deliver_now
+    UserMailer.mail_beer(consulta).deliver_now
   end
 
   private
