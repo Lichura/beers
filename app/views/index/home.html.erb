@@ -52,57 +52,7 @@
       					<label for= <%= 'img-' + (galeria.foto_numero + 1).to_s %> class="next">&#x203a;</label>
     				</div>
     			</li>
-    		<% end %>	
-  			<!--<input type="radio" name="radio-btn" id="img-2" />
-  				<li class="slide-container">
-    				<div class="slide">
-						<img src="http://imgur.com/rftszMr.jpg"/>
-    				</div>
-    				<div class="galeria">
-      					<label for="img-1" class="prev">&#x2039;</label>
-      					<label for="img-3" class="next">&#x203a;</label>
-    				</div>
-  				</li>
-  			<input type="radio" name="radio-btn" id="img-3" />
-  				<li class="slide-container">
-    				<div class="slide">
-      					<img src="http://i67.tinypic.com/4lrdzt.jpg"/>
-    				</div>
-    				<div class="galeria">
-      					<label for="img-2" class="prev">&#x2039;</label>
-      					<label for="img-4" class="next">&#x203a;</label>
-    				</div>
-  				</li>
-  			<input type="radio" name="radio-btn" id="img-4" />
-  				<li class="slide-container">
-    				<div class="slide">
-      					<img src="http://imgur.com/gGNHHZz.jpg"/>
-   					</div>
-    				<div class="galeria">
-      					<label for="img-3" class="prev">&#x2039;</label>
-      					<label for="img-5" class="next">&#x203a;</label>
-    				</div>
-  				</li>
-  			<input type="radio" name="radio-btn" id="img-5" />
-  				<li class="slide-container">
-    				<div class="slide">
-      					<img src="http://imgur.com/mDxABgp.jpg"/>
-    				</div>
-    				<div class="galeria">
-     					<label for="img-4" class="prev">&#x2039;</label>
-      					<label for="img-6" class="next">&#x203a;</label>
-    				</div>
-  				</li>
-  			<input type="radio" name="radio-btn" id="img-6" />
-  				<li class="slide-container">
-    				<div class="slide">
-      					<img src="http://imgur.com/VUj6Gqr.jpg"/>
-    				</div>
-    				<div class="galeria">
-      					<label for="img-5" class="prev">&#x2039;</label>
-      					<label for="img-1" class="next">&#x203a;</label>
-    				</div>
-  				</li>-->
+    		<% end %>	 			
   			<li class="galeria-dots">
     			<label for="img-1" class="galeria-dot" id="img-dot-1"></label>
     			<label for="img-2" class="galeria-dot" id="img-dot-2"></label>
@@ -170,7 +120,9 @@
 			<% @cervezas.each do |cerveza| %>
 			<div class="cerveza">
 				<img src=<%= cerveza.foto %> alt=<%= cerveza.marca %>/>
-				<div class="img-on-top"><a class="img-expand" href="#"><%= cerveza.marca %></a></div>
+				<div class="img-on-top"><a class="img-expand" href="#"><%= cerveza.marca %>
+					<span><%= cerveza.descripcion%><span></a>
+				</div>
 			</div>
 			<% end %>
 		<!--<div class="mostrar-todo"><span>Mostrar todo</span></div>-->
