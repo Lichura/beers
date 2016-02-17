@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Mensajes</h1>
+<h1>Mensajes</h1>
 
 <table>
   <thead>
@@ -20,9 +20,9 @@
         <td><%= mensaje.mail %></td>
         <td><%= mensaje.consulta %></td>
         <td><%= mensaje.created_at %></td>
-        <td><%= link_to 'Show', mensaje %></td>
-        <td><%= link_to 'Edit', edit_mensaje_path(mensaje) %></td>
-        <td><%= link_to 'Destroy', mensaje, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', mensaje %></td>
+        <td><%= link_to 'Editar', edit_mensaje_path(mensaje) %></td>
+        <td><%= link_to 'Eliminar', mensaje, method: :delete, data: { confirm: 'Esta seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,5 @@
 
 <br>
 
-<%= link_to 'New Mensaje', new_mensaje_path %>
+<%= link_to 'Nuevo Mensaje', new_mensaje_path %>
+<%= link_to 'Menu', menu_path %>
